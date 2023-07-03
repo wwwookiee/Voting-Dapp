@@ -6,3 +6,9 @@ This Dapp was built using Next.js & Hardhat.
 
 ## Voting-Dapp Vercel Link
 https://voting-dapp-pink.vercel.app/
+
+
+## Dapp components relation
+
+<a href="https://ibb.co/N2hydHB"><img src="https://i.ibb.co/tpfJTWr/Drawing.jpg" alt="Drawing" border="0"></a>
+

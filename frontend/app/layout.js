@@ -18,6 +18,8 @@ import {
 
 import { publicProvider } from 'wagmi/providers/public';
 
+import { goerli } from 'wagmi/chains'
+
 const { chains, publicClient } = configureChains(
   [hardhat,goerli],
   [

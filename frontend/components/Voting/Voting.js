@@ -79,7 +79,7 @@ const getEvents = async() => {
     address: '0x07EBB62Be83F68e3141abBe2F8eBF9ba8D43B582',
     event: parseAbiItem('event VoterRegistered(address voterAddress)'),
     fromBlock: 9285292n,
-    toBlock: 'latest'
+    toBlock: 9286292n
   })
   setVoterAddressEvents(VotersLogs.map(
     log => ({ voterAddress: log.args.voterAddress })
@@ -90,7 +90,7 @@ const getEvents = async() => {
     address: '0x07EBB62Be83F68e3141abBe2F8eBF9ba8D43B582',
     event: parseAbiItem('event ProposalRegistered(uint proposalId)'),
     fromBlock: 9285292n,
-    toBlock: 'latest'
+    toBlock: 9286292n
   })
 
   const proposalEventsWithDescription = await Promise.all(
@@ -107,7 +107,7 @@ const getEvents = async() => {
     address: '0x07EBB62Be83F68e3141abBe2F8eBF9ba8D43B582',
       event: parseAbiItem('event Voted(address voter, uint256 proposalId)'),
       fromBlock: 9285292n,
-      toBlock: 'latest'
+      toBlock: 9285292n
   });
 
   const voteEventsWithDescription = await Promise.all(

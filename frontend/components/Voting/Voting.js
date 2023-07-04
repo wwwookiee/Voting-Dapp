@@ -87,7 +87,7 @@ const getEvents = async() => {
   // Get all the events for ProposalRegistered event
   const ProposalsLogs = await client.getLogs({
     event: parseAbiItem('event ProposalRegistered(uint proposalId)'),
-    fromBlock: 0n,
+    fromBlock: 9285292,
     toBlock: 'latest'
   })
 

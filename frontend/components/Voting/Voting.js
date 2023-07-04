@@ -8,7 +8,8 @@ import { Flex, Text, useToast } from '@chakra-ui/react'
 
 // VIEM (pour les events)
 import { createPublicClient, http, parseAbiItem } from 'viem'
-import { hardhat } from 'viem/chains'
+import { hardhat, goerli } from 'viem/chains'
+
 
 // CONTRACT
 import Contract from '../../public/abi/Voting.json'
@@ -45,7 +46,7 @@ const workflowSatusToText = {
 
 /* Creat client for viem events */
 const client = createPublicClient({
-  chain: hardhat,
+  chain: goerli,
   transport : http()
 })
 
